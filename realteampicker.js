@@ -14,7 +14,15 @@ function add_el_to_arr()
 function create_teams()
 {
     howManyTeams=document.getElementById("text2").value;
-
+    if(howManyTeams>4){
+        alert('Max 4 teams support :(');
+        window.location.reload(true);
+    }
+    else {
+var res=array.length%howManyTeams;
+if(res!=0){
+array.push("dodatkowy");
+}
 for(var z=0;z<howManyTeams;z++)
 {
     array2[z]=new Array();
@@ -31,6 +39,7 @@ for(var y=((array.length)/howManyTeams);y!=0;y--)
     c++;
 }
 display_arr();
+}
 }
 
 function display_arr()
