@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <title>RealTeamPicker</title>
     <script src="realteampicker.js"></script>
 </head>
 
@@ -10,12 +10,25 @@
     <!-- <input type="text" id="text1"></input> -->
 
 
+<!-- <p><h4>W pierwsze okienko wpisujemy imiona i zatwierdzamy enterem/Add, jak skończymy to w drugie okienko wpisujemy liczbe drużyn i klikamy start.</h4></p>
+<p>imiona:      liczba graczy:</p>     -->
+<!-- <br> -->
 
+<!-- <form action=""> -->
+    <h2>Real Team Picker</h2>
+    Names:
     <input type="text" id="text1" onkeydown="if (event.keyCode == 13)
                         document.getElementById('button1').click()" />
-    <input type="button" id="button1" value="Add" onclick="add_el_to_arr();"></input>
+                        <input type="button" id="button1" value="Add" onclick="add_el_to_arr();"></input>
+   <!-- </form> -->
+   <br>
+   <!-- <form action=""> -->
+       No. teams:
     <input type="text" id="text2"></input>
     <input type="button" id="button3" value="Start" onclick="create_teams();"></input>
+<!-- </form> -->
+<p>confirm names with Enter/Add btn</p>
+<br><br>
     <div id="Result"></div>
 </body>
 

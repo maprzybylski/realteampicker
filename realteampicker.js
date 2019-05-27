@@ -38,11 +38,12 @@ function display_arr()
     var e="";
     for(var y=0;y<array2.length;y++)
     {
-        e+="Team "+(y+1)+"<br/>";
+        e+="Team "+(y+1)+"<br/>"+"----------"+"<br/>";
         for(var z=0;z<array2[y].length;z++)
         {
             e+=array2[y][z]+"<br/>";
         }
+        e+="----------"+"<br/>";
     }
     document.getElementById("Result").innerHTML=e;
 }
