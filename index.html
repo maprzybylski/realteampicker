@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
 
-<h1>Real Team Picker</h1>
-<p><a href="https://github.com/maprzybylski/realteampicker">source-code</a></p>
-<p><h2>developed by Marcin Przybylski</h2></p>
-<script src="realteampicker.js"></script>
+<head>
+    <title>Page Title</title>
+    <script src="realteampicker.js"></script>
+</head>
+
+<body>
+    <!-- <input type="text" id="text1"></input> -->
+
+
+
+    <input type="text" id="text1" onkeydown="if (event.keyCode == 13)
+                        document.getElementById('button1').click()" />
+    <input type="button" id="button1" value="Add" onclick="add_el_to_arr();"></input>
+    <input type="text" id="text2"></input>
+    <input type="button" id="button3" value="Start" onclick="create_teams();"></input>
+    <div id="Result"></div>
 </body>
+
 </html>
